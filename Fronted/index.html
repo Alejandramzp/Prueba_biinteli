@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>VIAJE POR COLOMBIA</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <h1>VIAJE POR COLOMBIA</h1>
+    <form onsubmit="event.preventDefault(); searchJourney();">
+        <label for="origin">Origen:</label>
+        <select id="origin" required>
+            <option value="">Seleccione el origen</option>
+            <option value="BGA">Bucaramanga (BGA)</option>
+            <option value="MED">Medellín (MED)</option>
+            <option value="CTG">Cartagena (CTG)</option>
+            <option value="BTA">Bogotá (BTA)</option>
+            <option value="CAL">Cali (BTA)</option>
+            <option value="CUC">Cúcuta (BTA)</option>
+            <option value="STA">Santa Marta (BTA)</option>
+        </select><br><br>
+
+        <label for="destination">Destino:</label>
+        <select id="destination" required>
+            <option value="">Seleccione el destino</option>
+            <option value="BGA">Bucaramanga (BGA)</option>
+            <option value="MED">Medellín (MED)</option>
+            <option value="CTG">Cartagena (CTG)</option>
+            <option value="BTA">Bogotá (BTA)</option>
+            <option value="CAL">Cali (BTA)</option>
+            <option value="CUC">Cúcuta (BTA)</option>
+            <option value="STA">Santa Marta (BTA)</option>
+        </select><br><br>
+
+        <button type="submit">Buscar</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
